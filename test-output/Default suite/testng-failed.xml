@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestNGSeleniumConcept.AssertionDemo">
+      <class name="TestNGSeleniumConcept.CrossBrowserTesting">
         <methods>
-          <include name="test"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="openGoogleTest"/>
         </methods>
-      </class> <!-- TestNGSeleniumConcept.AssertionDemo -->
+      </class> <!-- TestNGSeleniumConcept.CrossBrowserTesting -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

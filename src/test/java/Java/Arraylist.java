@@ -3,6 +3,7 @@ package Java;
 import java.util.ArrayList;
 import java.util.Iterator;
 
+import java.util.Collections;
 
 public class Arraylist {
 
@@ -23,6 +24,10 @@ public class Arraylist {
 		
 		//get element of arraylist 
 		System.out.println("Arraylist value at 3 index :"+mylist.get(3));
+		
+		
+
+		
 		
 		
 		//Accessing all elements
@@ -57,10 +62,47 @@ public class Arraylist {
 		mylist.removeAll(mylist2);
 		System.out.println(" Arraylist :" +mylist);
 		
+		//Collections.sort()
 		
 		//clear
 		mylist.clear();
 		System.out.println("Empty Arraylist :" +mylist.isEmpty());
+		
+		
+
+        ArrayList al = new ArrayList();
+        
+        al.add("x");
+        al.add("y");
+        al.add("a");
+        al.add("b");
+        al.add(4 ,"e");
+        //sorting 
+        Collections.sort(al);
+        Collections.sort(al , Collections.reverseOrder());        
+       System.out.println(al);
+       //shuffle
+     Collections.shuffle(al);
+     System.out.println(al);
+     
+     //replace 
+     al.set(2, "C");
+     
+     //isEmpy 
+     al.isEmpty();
+     System.out.println("list is Empty : " +al.isEmpty());
+     
+     //contains
+     //#Search
+     al.contains("e");
+     System.out.println("E contains in list " + al.contains("e"));
+     
+     
+     ArrayList al_dup = new ArrayList();
+     al_dup.addAll(al);
+            System.out.println(al_dup);
+     al_dup.removeAll(al);
+            System.out.println(al_dup);
 		
 		
 	}

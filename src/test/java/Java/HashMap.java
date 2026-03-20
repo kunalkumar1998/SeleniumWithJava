@@ -1,19 +1,12 @@
 package Java;
 
-import java.util.Iterator;
-
-import com.google.common.collect.Multiset.Entry;
-
-;
-
-
 public class HashMap {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
 		
-	 HashMap<Integer, String> hm = new HashMap<Integer,String>();
+	/* HashMap<Integer, String> hm = new HashMap<Integer,String>();
 	        
 	        hm.put(101, "kunal");
 	        hm.put(103, "kumar");
@@ -40,9 +33,8 @@ public class HashMap {
 	        while(it.hasNext()){
 	            Entry<Integer,String> entry = it.isnext();
 	            System.out.println(entry.keySet() + "    "+entry.values());
-	            
+	       
+	            */
 	        }
 		
 			}
-
-}

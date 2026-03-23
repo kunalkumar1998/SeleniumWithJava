@@ -1,6 +1,6 @@
 package TestNGSeleniumConcept;
 
-import org.testng.annotations.*;
+import org.testng.annotations.Test;
 
 public class DataProvider {
 

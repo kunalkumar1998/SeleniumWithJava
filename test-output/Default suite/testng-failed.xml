@@ -5,8 +5,8 @@
     <classes>
       <class name="POMdemo.LoginTest">
         <methods>
-          <include name="LoginTest"/>
           <include name="TestStep"/>
+          <include name="LoginTestWithPageFactory"/>
           <include name="AfterTest"/>
         </methods>
       </class> <!-- POMdemo.LoginTest -->

@@ -24,9 +24,7 @@ public class LoginTest {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
 		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 
-		WebDriverWait mywait = new WebDriverWait(driver,Duration.ofSeconds(5));
-		mywait.until(ExpectedConditions.urlMatches("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\"")); 
-		//driver.wait(4);
+
 		
 	}
 	
@@ -37,6 +35,19 @@ public class LoginTest {
 		pg.setusername("Admin");
 		pg.setPassword("admin123");
 		pg.clickLoginButton();
+		
+		//Assert.assertEquals(driver.getTitle(), "OrangeHRM");
+		
+		
+	}
+	
+	@Test
+	public void LoginTestWithPageFactory() {
+		PageClassUsingPageFactory pg = new PageClassUsingPageFactory(driver);
+		
+		pg.setUsername("Admin");
+		pg.setPassword("admin123");
+		pg.login();
 		
 		//Assert.assertEquals(driver.getTitle(), "OrangeHRM");
 		

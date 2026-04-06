@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestNGSeleniumConcept.CrossBrowserTesting">
+      <class name="POMdemo.LoginTest">
         <methods>
-          <include name="setup"/>
-          <include name="tearDown"/>
-          <include name="openGoogleTest"/>
+          <include name="LoginTest"/>
+          <include name="TestStep"/>
+          <include name="AfterTest"/>
         </methods>
-      </class> <!-- TestNGSeleniumConcept.CrossBrowserTesting -->
+      </class> <!-- POMdemo.LoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
